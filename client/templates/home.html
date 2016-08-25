@@ -1,0 +1,15 @@
+<template name="home">
+{{#markdown}}
+## Welcome to my Blog
+Here I'm talking about my latest discoveries from the world of
+JavaScript.
+{{/markdown}}
+{{{exampleHelper}}}
+{{> contextExample someText="I was set in the parent template's helper, as an argument."}}
+{{> contextExample dataContextHelper}}
+{{#blockHelperExample false}}
+<span>Some Content</span>
+{{else}}
+<span>Some Warning</span>
+{{/blockHelperExample}}
+</template>
